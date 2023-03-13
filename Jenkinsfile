@@ -5,19 +5,19 @@ pipeline {
   stages {
     stage('Build'){
        steps {
-         echo "Build"
+         echo "Build...."
 
 	   }
 	}
     stage('test'){
        steps {
-         echo "test"
+         echo "test...."
 
 	   }
 	}
 	stage('Integration test'){
        steps {
-         echo "Integration test"
+         echo "Integration test..."
 
 	   }
 	}
@@ -25,13 +25,13 @@ pipeline {
   
   post {
        always {
-		  echo 'I am awesome , I always run'
+		  echo 'I am awesome , I always run...'
 	   }
        success {
-		  echo 'I run when you are successfull'
+		  echo 'I run when you are successfull...'
 	   }
        failure {
-		  echo 'I run when you fail'
+		  echo 'I run when you fail...'
 	   }	   
   }
    
