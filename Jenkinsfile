@@ -48,7 +48,7 @@ pipeline {
          }
       }
 
-      /*stage ('Package'){
+      stage ('Package'){
          steps {
             sh "mvn package -DskipTests"
          }
@@ -60,6 +60,7 @@ pipeline {
             script {
                dockerImage = docker.build("sureshcm1/currency-exchange-devops:${env.BUILD_TAG}")
             }
+         }
       }
     stage('Push Docker Image'){
        steps {
@@ -71,7 +72,7 @@ pipeline {
 
         }
 
-	   }    */
+	   }    
   } 
   
   /*post {
