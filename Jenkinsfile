@@ -74,7 +74,7 @@ pipeline {
 	   }    
   } 
   
-  post {
+  /*post {
        always {
 		  echo 'I am awesome , I always run...'
 	   }
@@ -84,6 +84,7 @@ pipeline {
        failure {
 		  echo 'I run when you fail...'
 	   }	   
-  }
+  }*/
    
-
+  }
+}
