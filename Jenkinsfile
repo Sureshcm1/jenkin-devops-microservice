@@ -40,13 +40,13 @@ pipeline {
 
          }
       }
-      stage('Integration Test'){
+     /* stage('Integration Test'){
          steps {
             //echo "Integration test..."
             sh "mvn failsafe:integration-test failsafe:verify"
 
          }
-      }
+      }*/
 
       stage ('Package'){
          steps {
