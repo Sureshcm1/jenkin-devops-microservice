@@ -58,7 +58,7 @@ pipeline {
        steps {
         //"docker build -t in28min/currency-exchange-devops:$env.BUILD_TAG"
            script {
-              dockerImage = docker.build("in28min/currency-exchange-devops:${env.BUILD_TAG}")
+              dockerImage = docker.build("sureshcm1/currency-exchange-devops:${env.BUILD_TAG}")
            }
 	   }
     stage('Push Docker Image'){
